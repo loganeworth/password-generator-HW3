@@ -10,6 +10,7 @@ function generatePassword() {
     
   }
 
+  let genPassword = ""
   let allpossible = []
 
   
@@ -47,12 +48,14 @@ function generatePassword() {
   
   for (let index = 0; index < passwordLength; index++) {
   let randomIndex = Math.floor(Math.random()*allpossible.length)
-    console.log(allpossible[randomIndex])
+    let passChar = allpossible[randomIndex];
+    genPassword += passChar;
+    console.log(passChar)
+
   }
   
-
-
-
+  return genPassword
+  
 
 // commented out code, will comeback to
 
