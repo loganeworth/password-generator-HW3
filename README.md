@@ -4,7 +4,7 @@ Second homework assignment, Javascript.
 
 ## Description
 
-The purpose of this project was to apply applicable learnings from class to finish source code of creating a password generator.
+The purpose of this project was to apply applicable learnings from class to finish source code of creating a password generator. From class I applied Javascript functions, if statements and for loops.
 
 ## Installation
 

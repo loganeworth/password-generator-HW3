@@ -7,7 +7,7 @@ function generatePassword() {
   let passwordLength = parseInt(passwordPrompt)
   if (passwordPrompt < 8 || passwordPrompt > 128 || isNaN(passwordPrompt)) {
     alert("Check your length!!")
-    
+    return
   }
 
   let genPassword = ""
@@ -31,19 +31,19 @@ function generatePassword() {
 
   if (passwordUpper) {
     allpossible += uppercase
-  }
+  };
   
   if (passwordLower) {
     allpossible += lowercase
-  }
+  };
   
   if (passwordNumeric) {
     allpossible += numeric
-  }
+  };
   
   if (passwordSpecialcharacters) {
     allpossible += specialcharacters
-  }
+  };
   
   for (let index = 0; index < passwordLength; index++) {
   let randomIndex = Math.floor(Math.random()*allpossible.length)
